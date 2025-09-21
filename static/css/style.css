@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+/* ===== GENERAL STYLES ===== */
+>>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #eef2f7;
@@ -6,6 +10,10 @@ body {
     color: #333;
 }
 
+<<<<<<< HEAD
+=======
+/* Container for content */
+>>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
 .container {
     max-width: 800px;
     margin: 50px auto;
@@ -15,12 +23,20 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
+=======
+/* Headings */
+>>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
 h1 {
     text-align: center;
     color: #2c3e50;
     margin-bottom: 25px;
 }
 
+<<<<<<< HEAD
+=======
+/* ===== BUTTONS ===== */
+>>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
 button, a {
     padding: 8px 15px;
     margin: 5px;
@@ -50,6 +66,10 @@ a:hover {
     background-color: #27ae60;
 }
 
+<<<<<<< HEAD
+=======
+/* Delete button override */
+>>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
 .delete-btn {
     background-color: #e74c3c !important;
 }
@@ -58,6 +78,10 @@ a:hover {
     background-color: #c0392b !important;
 }
 
+<<<<<<< HEAD
+=======
+/* ===== LIST STYLES ===== */
+>>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
 ul {
     list-style: none;
     padding: 0;
@@ -79,12 +103,20 @@ li:hover {
     transform: scale(1.01);
 }
 
+<<<<<<< HEAD
+=======
+/* Actions inside list items */
+>>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
 li .actions a {
     margin-left: 5px;
     padding: 6px 12px;
     font-size: 0.9em;
 }
 
+<<<<<<< HEAD
+=======
+/* ===== FORM STYLES ===== */
+>>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
 form input, form select {
     width: 100%;
     padding: 10px;
@@ -101,6 +133,10 @@ form input:focus, form select:focus {
     box-shadow: 0 0 5px rgba(52,152,219,0.5);
 }
 
+<<<<<<< HEAD
+=======
+/* ===== TOTAL EXPENSES ===== */
+>>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
 .total {
     font-weight: bold;
     text-align: right;
@@ -109,6 +145,10 @@ form input:focus, form select:focus {
     color: #34495e;
 }
 
+<<<<<<< HEAD
+=======
+/* ===== LINKS ===== */
+>>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
 a {
     text-decoration: none;
 }
@@ -117,6 +157,10 @@ a:hover {
     opacity: 0.9;
 }
 
+<<<<<<< HEAD
+=======
+/* ===== MOBILE RESPONSIVE ===== */
+>>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
 @media (max-width: 600px) {
     .container {
         margin: 20px;
