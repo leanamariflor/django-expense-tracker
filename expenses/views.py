@@ -2,10 +2,12 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Expense
 from .forms import ExpenseForm
 
+
 def expense_list(request):
-    expenses = Expense.objects.all().order_by('-date')
+    expenses = Expense.objects.all()
     total = sum(exp.amount for exp in expenses)
     return render(request, 'expenses/expense_list.html', {'expenses': expenses, 'total': total})
+
 
 def add_expense(request):
     if request.method == 'POST':

@@ -1,178 +1,60 @@
-<<<<<<< HEAD
-=======
-/* ===== GENERAL STYLES ===== */
->>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
+/* General body styling */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eef2f7;
+    background-color: #f5f7fa;
+    color: #333;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
-<<<<<<< HEAD
-=======
 /* Container for content */
->>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
 .container {
-    max-width: 800px;
+    max-width: 700px;
     margin: 50px auto;
-    padding: 25px 30px;
-    background-color: #fff;
+    background-color: #ffffff;
+    padding: 30px 40px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-<<<<<<< HEAD
-=======
 /* Headings */
->>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
 h1 {
-    text-align: center;
-    color: #2c3e50;
+    font-size: 28px;
+    color: #e74c3c; /* red for delete page */
+    margin-bottom: 20px;
+}
+
+/* Paragraph text */
+p {
+    font-size: 16px;
     margin-bottom: 25px;
 }
 
-<<<<<<< HEAD
-=======
-/* ===== BUTTONS ===== */
->>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
-button, a {
-    padding: 8px 15px;
-    margin: 5px;
+/* Delete button */
+button.delete-btn {
+    background-color: #e74c3c;
+    color: white;
     border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s ease;
-}
-
-button {
-    background-color: #3498db;
-    color: white;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
-a {
-    background-color: #2ecc71;
-    color: white;
-}
-
-a:hover {
-    background-color: #27ae60;
-}
-
-<<<<<<< HEAD
-=======
-/* Delete button override */
->>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
-.delete-btn {
-    background-color: #e74c3c !important;
-}
-
-.delete-btn:hover {
-    background-color: #c0392b !important;
-}
-
-<<<<<<< HEAD
-=======
-/* ===== LIST STYLES ===== */
->>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f7f9fb;
-    margin-bottom: 10px;
-    padding: 12px 15px;
+    padding: 12px 25px;
     border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-li:hover {
-    transform: scale(1.01);
+button.delete-btn:hover {
+    background-color: #c0392b;
 }
 
-<<<<<<< HEAD
-=======
-/* Actions inside list items */
->>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
-li .actions a {
-    margin-left: 5px;
-    padding: 6px 12px;
-    font-size: 0.9em;
-}
-
-<<<<<<< HEAD
-=======
-/* ===== FORM STYLES ===== */
->>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
-form input, form select {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 15px 0;
-    box-sizing: border-box;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 1em;
-}
-
-form input:focus, form select:focus {
-    outline: none;
-    border-color: #3498db;
-    box-shadow: 0 0 5px rgba(52,152,219,0.5);
-}
-
-<<<<<<< HEAD
-=======
-/* ===== TOTAL EXPENSES ===== */
->>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
-.total {
-    font-weight: bold;
-    text-align: right;
-    font-size: 1.1em;
-    margin-bottom: 20px;
-    color: #34495e;
-}
-
-<<<<<<< HEAD
-=======
-/* ===== LINKS ===== */
->>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
+/* Cancel link */
 a {
+    display: inline-block;
+    margin-top: 15px;
     text-decoration: none;
+    color: #3498db;
+    font-weight: 500;
 }
 
 a:hover {
-    opacity: 0.9;
-}
-
-<<<<<<< HEAD
-=======
-/* ===== MOBILE RESPONSIVE ===== */
->>>>>>> 62b6f3a40536821c97493ab5d4718a0dc245fb3d
-@media (max-width: 600px) {
-    .container {
-        margin: 20px;
-        padding: 20px;
-    }
-
-    li {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    li .actions {
-        margin-top: 8px;
-    }
+    text-decoration: underline;
 }
