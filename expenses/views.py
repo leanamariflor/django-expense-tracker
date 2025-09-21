@@ -10,24 +10,18 @@ def expense_list(request):
 
 
 def add_expense(request):
-    if request.method == 'POST':
-        form = ExpenseForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('expense_list')
-    else:
-        form = ExpenseForm()
+    form = ExpenseForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('expense_list')
     return render(request, 'expenses/expense_form.html', {'form': form})
 
 def edit_expense(request, pk):
     expense = get_object_or_404(Expense, pk=pk)
-    if request.method == 'POST':
-        form = ExpenseForm(request.POST, instance=expense)
-        if form.is_valid():
-            form.save()
-            return redirect('expense_list')
-    else:
-        form = ExpenseForm(instance=expense)
+    form = ExpenseForm(request.POST or None, instance=expense)
+    if form.is_valid():
+        form.save()
+        return redirect('expense_list')
     return render(request, 'expenses/expense_form.html', {'form': form})
 
 def delete_expense(request, pk):
